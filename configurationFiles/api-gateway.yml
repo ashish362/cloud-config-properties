@@ -17,7 +17,6 @@ eureka:
 
 zuul:
   routes:
-    dummy-service: /dummy/**
     userprofile-service: /userprofile/**
     uaa-service:
       sensitiveHeaders:
@@ -27,7 +26,6 @@ zuul:
   
           
 security:
-  # Disable Spring Boot basic authentication
   basic:
     enabled: false
   oauth2:
