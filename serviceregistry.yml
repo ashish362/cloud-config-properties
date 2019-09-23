@@ -4,6 +4,15 @@ spring:
 
 server:
   port: 8761
+  
+ssl:
+    enabled: true
+    key-store: classpath:eureka.p12
+    key-store-password: changeit
+    trust-store: classpath:eureka.jks
+    key-alias: eureka  
+  
+  
 
 eureka:
   instance:
